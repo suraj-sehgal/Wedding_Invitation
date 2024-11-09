@@ -12,8 +12,13 @@
 var myaudio = document.getElementById("my_audio");
 
 window.onload = function() {
-    myaudio.play();
-    console.log('Shaadi me zaroor aana');
+    // Unmute after load
+    myaudio.muted = false;
+    myaudio.play().then(function() {
+        console.log('Shaadi me zaroor aana');
+    }).catch(function(error) {
+        console.error('Error playing audio:', error);
+    });
 };
 
 
