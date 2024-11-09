@@ -1,4 +1,4 @@
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxnUL9qcht2oEF074cG1zCfv2IJN0zCFjbCSjz7365LQrdNdLA3P_CjBeDg1dBsyMIc/exec';
+// const scriptURL = 'https://script.google.com/macros/s/AKfycbxnUL9qcht2oEF074cG1zCfv2IJN0zCFjbCSjz7365LQrdNdLA3P_CjBeDg1dBsyMIc/exec';
 const form = document.forms['newsletter'];
 const loading = document.querySelector(".loading");
 //const join = document.querySelector('.button');

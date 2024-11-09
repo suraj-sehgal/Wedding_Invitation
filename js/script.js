@@ -7,11 +7,15 @@
 })(jQuery);
 
 
+
+
 var myaudio = document.getElementById("my_audio");
-$(document).on('click', function () {
+
+window.onload = function() {
     myaudio.play();
     console.log('Shaadi me zaroor aana');
-});
+};
+
 
 
 // Set the date we're counting down to
@@ -51,20 +55,20 @@ var x = setInterval(function () {
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
     origin: 'top',
-    distance: '1.5rem',
+    distance: '2.5rem',
     duration: 2000,
     delay: 200,
-    // reset: true
+    reset: true
 });
 
 sr.reveal('.ganesha',{origin:'top',delay:200})
-sr.reveal(`.raj`, { origin: 'left', delay: 500 })
-sr.reveal(`.jyoti`, { origin: 'right', delay: 500 })
-sr.reveal(`.gif,.home_txt`, { delay: 1000, origin: 'top' })
-sr.reveal(`.top-right-decoration,.top-left-decoration`, { origin: 'left', delay: 1500 })
+sr.reveal(`.raj`, { origin: 'left', delay: 800 })
+sr.reveal(`.jyoti`, { origin: 'right', delay: 1000 })
+sr.reveal(`.gif,.home_txt`, { delay: 200, origin: 'top' })
+sr.reveal(`.top-right-decoration,.top-left-decoration`, { origin: 'left', delay: 1000 })
 sr.reveal(`.responsive-table__row`, { interval: 200 })
-sr.reveal(`.table_container`, { delay: 100, origin: 'top' })
-sr.reveal(`.happiness,.hindi_text`, { delay: 400, origin: 'bottom' })
-sr.reveal(`.social__links`, { delay: 2000, origin: 'bottom', interval: 200 })
+sr.reveal(`.table_container`, { delay: 200, origin: 'top' })
+sr.reveal(`.happiness,.hindi_text`, { delay: 200, origin: 'bottom' })
+sr.reveal(`.social__links`, { delay: 1000, origin: 'bottom'})
 sr.reveal(`.newsletter__description,.home__bottom`, { origin: 'left', delay: 400 })
 sr.reveal(`.newsletter__form,.CTA`, { origin: 'right', delay: 400 })
